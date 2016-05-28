@@ -1,15 +1,22 @@
 x = 1
+N = 2
 def f(n,y):
 	z = (n*(y**2)+1)**(0.5)
-	if int(z)==z:
-		return z
+	return z
+
+def pfsq(n):				#to check if n is a perfect square.
+	sqrt = n**(0.5)
+	if int(sqrt)==sqrt:
+		return True
 	else:
-		return 1
+		return False
 	
-for n in range(2,100001):
-	y = 1.0
-	while(f(n,y)==1):
-		if x<f(n,y):
-			x=f(n,y)	
-		y+=1.0
-print x
+for n in range(1,100000):
+	if not pfsq(n):
+		for y in range(1,100000):
+			if int(f(n,y))==f(n,y):
+				if f(n,y)>x:
+					x=f(n,y)
+					N=n	
+				break
+print N
