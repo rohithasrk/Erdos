@@ -9,4 +9,4 @@ n = 3334**3334
 A = sumOfDigits(n)
 B = sumOfDigits(A)
 
-print 2013*sumOfDigits(B)
+#print 2013*sumOfDigits(B)
