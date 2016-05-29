@@ -1,6 +1,6 @@
 from p8 import *
 
-f = open("p12","r+")
+f = open("p12.txt","r+")
 x = f.read()
 lines = x.split('\n')
 #print len(lines)
@@ -12,7 +12,8 @@ for i in range(len(lines)):
 	if isPrime(int(lines[i])):
 		sortedlist.append(int(lines[i]))
 
-#sortedlist=sorted(sortedlist)
+print sortedlist
+sortedlist=sorted(sortedlist)
 difflist=[]
 for i in range(1,len(sortedlist)):
 	difflist.append(sortedlist[i]-sortedlist[i-1])
