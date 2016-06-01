@@ -5,7 +5,7 @@ using namespace std;
 string toBin(long long int a){
 	string s="";
 	while(a>0){
-		string r= to_string(a%2);
+		string r= to_String(a%2);
 		s=r+s;
 		a=a/2;
 	}
