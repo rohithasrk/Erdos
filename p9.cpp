@@ -19,5 +19,6 @@ int main(){
 		if(nfact(number+1)>=300){
 			cout<<number+1<<endl;
 		}
+	number++;
 	}
 }
