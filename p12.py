@@ -19,6 +19,7 @@ lines = sorted(lines)
 sortedlist=[]
 gap=[]
 gapv=0
+
 for i in range(len(lines)):
 	if isPrime(int(lines[i])):
 		sortedlist.append(int(lines[i]))
@@ -28,9 +29,12 @@ for i in range(len(lines)):
 		gapv+=1;
 print gap
 print max(gap)
-"""print sortedlist
-#sortedlist=sorted(sortedlist)
+print len(gap)
+
+print len(sortedlist)
+sortedlist=sorted(sortedlist)
+
 difflist=[]
 for i in range(1,len(sortedlist)):
 	difflist.append(sortedlist[i]-sortedlist[i-1])
-print max(difflist)"""
+print max(difflist)
