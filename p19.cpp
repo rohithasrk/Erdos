@@ -13,7 +13,8 @@ int main(){
 	long long int n=1;
 	while(mod(n)!=1){
 		if(mod(n+1)==1){
-			cout<<n+1<<endl;
+			cout<<(n+1)%1000000007<<endl;
 		}
+	n++;
 	}
 }

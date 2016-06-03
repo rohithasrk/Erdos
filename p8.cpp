@@ -5,7 +5,7 @@ using namespace std;
 bool isprime(long int a){
 	long int sq = int(sqrt(a));
 	long int nfact=0;
-	for(long int i=2;i<sq;i++){
+	for(long int i=2;i<=sq;i++){
 		if(a%i==0){
 			nfact++;
 			return false;
@@ -26,8 +26,9 @@ int main(){
 	long long int sum=2;
 	for(long int i=2;i<1000000000;i++){
 		if(isprime(i)){
-			sum+=i
+			sum+=i;
 		}
 	}
-	cout<<sum<<endl;
+	long int sd=sumOfDigits(sum);
+	cout<<sd<<endl;
 }

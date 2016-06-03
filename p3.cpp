@@ -14,7 +14,7 @@ bool pfsq(int n){
 }
 
 int main(){
-	long long int X=1;
+	long long int lfX=1;
 	int N=1;
 	for(int n=2;n<100000;n++){
 		if(!pfsq(n)){
@@ -22,11 +22,14 @@ int main(){
 			while(int(f(n,y))!=f(n,y)){
 				double nex=f(n,y+1);
 				if(int(nex)==nex){
-					if(nex>X){X=nex; N=n;}
+					if(nex>lfX){ lfX=nex; N=n;}
 				}
 				y++;
 			}
 		}
 	}
+	//cout<<pfsq(626)<<endl;
+	//cout<<f(2,3)<<endl;
 	cout<<N<<endl;
+	cout<<lfX<<endl;
 }
