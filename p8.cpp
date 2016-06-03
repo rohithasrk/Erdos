@@ -24,11 +24,10 @@ int sumOfDigits(long int n){
 
 int main(){
 	long long int sum=2;
-	for(long int i=2;i<1000000000;i++){
+	for(long int i=3;i<1000000000;i++){
 		if(isprime(i)){
-			sum+=i;
+			sum+=sumOfDigits(i);
 		}
 	}
-	long int sd=sumOfDigits(sum);
-	cout<<sd<<endl;
+	cout<<sum<<endl;
 }
