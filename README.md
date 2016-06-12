@@ -1,3 +1,4 @@
-Back up of my trials for problems on Erdos.
+### Erdos solutions.
 
+Some of them are partially solved.
 You can see at: https://erdos.sdslabs.co/
